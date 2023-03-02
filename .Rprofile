@@ -2,3 +2,6 @@
 # 必要に応じて編集してください
 library(tidyverse) 
 library(ggplot2)
+library(broom)
+library(tidyr)
+
