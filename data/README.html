@@ -360,17 +360,19 @@ display: none;
 
 <div id="このディレクトリの役割" class="section level1">
 <h1>このディレクトリの役割</h1>
-<p><code>data</code>はあなたが分析で用いるデータを入れておくためのディレクトリ(フォルダ)です。分析用のソースコードなどと一緒にすると訳がわからなくなったりわからなくなったりするので、ディレクトリを分けましょう。分析や処理の再現性を確保するために重要な技術の一つです。</p>
+<p><code>data</code>はあなたが分析で用いるデータを入れておくためのディレクトリ(フォルダ)です。分析用のソースコードなどと一緒にすると訳がわからなくなるので、ディレクトリを分けましょう。<strong>分析や処理の再現性</strong>を確保するために重要な技術の一つです。</p>
+<hr />
+<div id="サブディレクトリの構成" class="section level2">
+<h2>サブディレクトリの構成</h2>
 <p><code>data</code>ディレクトリの中身は次のサブディレクトリで構成するのが良いでしょう。</p>
 <ul>
-<li><code>in</code>：rawデータを入れておく場所。名前は<code>in</code>とか<code>raw</code>とかつけます。</li>
-</ul>
-<p>【重要】特別な事情がない限り、<strong>このディレクトリにあるファイルの中身を(直接、手動で)書き換えてはいけません。</strong></p>
-<ul>
-<li><code>out</code>:加工したデータを入れておく場所。名前は<code>out</code>とか<code>processed</code>とかつけます。Rなどで自分の分析に合うように加工したデータはrawデータと分けてこちらに入れておきましょう。つまり<code>rawデータ</code>→
+<li><p><code>in</code>：rawデータを入れておく場所。名前は<code>in</code>とか<code>raw</code>とかつけます。特別な事情がない限り、<strong>このディレクトリにあるファイルの中身を(直接、手動で)書き換えてはいけません。</strong></p></li>
+<li><p><code>out</code>:加工したデータを入れておく場所。名前は<code>out</code>とか<code>processed</code>とかつけます。Rなどで自分の分析に合うように加工したデータはrawデータと分けてこちらに入れておきましょう。つまり<code>rawデータ</code>→
 <code>Rなどで加工</code> →
-<code>out</code>に吐き出す、という流れです。</li>
+<code>out</code>に吐き出す、という流れです。</p></li>
 </ul>
+<p><strong>今回の課題で用いるデータは全て<code>data/in</code>の中に入れてあります。</strong></p>
+</div>
 </div>
 
 
