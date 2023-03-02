@@ -7,9 +7,9 @@
 nakamurolab_2023_spring.Rproj
 
 # 答え
-./answer
-./src/data/answer_make_dataset_DID.R
-./src/analysis/answer_analysis_DID.R
+answer
+/src/data/answer_make_dataset_DID.R
+/src/analysis/answer_analysis_DID.R
 
 # 可視化問題ソースコード
-./src/visualization_anscombes.R
+visualization_anscombes.R
