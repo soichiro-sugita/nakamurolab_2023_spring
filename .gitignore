@@ -8,6 +8,7 @@ nakamurolab_2023_spring.Rproj
 
 # 答え
 answer
+answer*
 /src/data/answer_make_dataset_DID.R
 /src/analysis/answer_analysis_DID.R
 

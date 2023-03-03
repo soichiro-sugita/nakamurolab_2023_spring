@@ -1,6 +1,6 @@
 
 # Cigarデータセットの読み込み --------------------------------------------
-install.packages("Ecdat") # 初回のみ
+# install.packages("Ecdat") # 初回のみ
 library(Ecdat)
 
 data("Cigar") # import:Cigarというオブジェクトができる
@@ -30,5 +30,7 @@ Cigar_did_sum <- Cigar %>%
          year_dummy = paste("D", year, sep = "_")) %>%
   group_by(post, year, year_dummy, ca) %>%
   summarise(sales = sum(sales*pop16)/sum(pop16))
+
+write.csv(Cigar_did_sum ,"./data/in/cigar_did_data.csv")
 
 ### 分析には Cigar_did_sum を用いる。###
